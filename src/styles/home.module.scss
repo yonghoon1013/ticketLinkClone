@@ -1,0 +1,65 @@
+@use '../styles/mixin' as *;
+@import '../styles//variables.scss';
+
+main{
+    .mainSlideSec{
+
+    }
+
+    .firstBannerSec{
+        @include pcWidth;
+        .firstBannerList{
+            @include flex();
+            >li{
+                +li{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 60%;
+                        background-color: $gray-ligth ;
+                    }
+                }
+                >img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .ticketOpneSec{
+        @include pcWidth;
+        .ticketOpneBox{
+            .secTop{
+                @include flex(space-between, flex-end);
+                margin-bottom: 34px;
+                >h2{
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+                >a{
+                    text-decoration: underline;
+                }
+            }
+
+            .posterBox{
+                >.ticketOpnePostList{
+                        @include flex(space-between);
+                        >li{
+                            width: 200px;
+                            height: 247px;
+                            >a{
+
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

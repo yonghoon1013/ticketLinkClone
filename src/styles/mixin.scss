@@ -1,0 +1,20 @@
+@mixin pcWidth(){
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+@mixin flex($x: flex-start, $y: center) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    @content;
+}
+
+@mixin textEllipsis($num){
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+    @content;
+}
