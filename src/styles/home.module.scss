@@ -32,4 +32,37 @@ main{
             }
         }
     }
+<<<<<<< HEAD
+=======
+
+    .ticketOpneSec{
+        @include pcWidth;
+        .ticketOpneBox{
+            .secTop{
+                @include flex(space-between, flex-end);
+                margin-bottom: 34px;
+                >h2{
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+                >a{
+                    text-decoration: underline;
+                }
+            }
+
+            .posterBox{
+                >.ticketOpnePostList{
+                        @include flex(space-between);
+                        >li{
+                            width: 200px;
+                            height: 247px;
+                            >a{
+
+                            }
+                        }
+                }
+            }
+        }
+    }
+>>>>>>> afb45bb4957c55d6024ce26abc55f71e8ce6c643
 }

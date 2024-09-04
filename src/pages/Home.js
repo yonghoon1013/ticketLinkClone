@@ -7,10 +7,18 @@ import firstBannerImg2 from '../asset/imgs/common/티켓링크_레이어배너2.
 
 import imgData from '../asset/json/posterData.json'
 import PosterComponent from '../components/PosterComponent'
+<<<<<<< HEAD
 
 
 function Home() {
     
+=======
+import { Link } from 'react-router-dom'
+
+
+function Home() {
+
+>>>>>>> afb45bb4957c55d6024ce26abc55f71e8ce6c643
     return (
         <main>
             {/* 메인 슬라이드 섹션 */}
@@ -28,11 +36,31 @@ function Home() {
 
             {/* 티켓 오픈 섹션 */}
             <section className={homeStyle.ticketOpneSec}>
+<<<<<<< HEAD
                 {
                     imgData.ticketOpne.map((item,index)=>(
                         <PosterComponent key={index} props={item} />
                     ))
                 }
+=======
+                <div className={homeStyle.ticketOpneBox}>
+                    <div className={homeStyle.secTop}>
+                        <h2>티켓오픈</h2>
+                        <Link to={'/'}>전체보기</Link>
+                    </div>
+                    <div className={homeStyle.posterBox}>
+                        <ul className={homeStyle.ticketOpnePostList}>
+                        {
+                            imgData.ticketOpne.map((item, index) => (
+                                <li key={index}>
+                                    <PosterComponent props={item} />
+                                </li>
+                            ))
+                        }
+                        </ul>
+                    </div>
+                </div>
+>>>>>>> afb45bb4957c55d6024ce26abc55f71e8ce6c643
             </section>
         </main>
     )
