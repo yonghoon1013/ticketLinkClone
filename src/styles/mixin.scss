@@ -8,8 +8,6 @@
     justify-content: $x;
     align-items: $y;
     @content;
-<<<<<<< HEAD
-=======
 }
 
 @mixin textEllipsis($num){
@@ -19,5 +17,4 @@
     -webkit-line-clamp: $num;
     -webkit-box-orient: vertical;
     @content;
->>>>>>> afb45bb4957c55d6024ce26abc55f71e8ce6c643
 }
