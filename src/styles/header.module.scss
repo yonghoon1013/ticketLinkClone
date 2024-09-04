@@ -1,0 +1,259 @@
+@use '../styles/mixin' as *;
+@import '../styles//variables.scss';
+
+$images: (
+    'bugs': '../asset/imgs/wordImg/bugs.svg',
+    'comico': '../asset/imgs/wordImg/comico.svg',
+    'hangame': '../asset/imgs/wordImg/hangame.svg',
+    'insidenhn': '../asset/imgs/wordImg/insidenhn.svg'
+);
+
+.header {
+    .utillHeader {
+        background-color: $gray-ligth;
+
+        .utillHeaderInner {
+            @include pcWidth();
+            @include flex(space-between, center);
+
+            >.left {
+                position: relative;
+                padding: 10px 0;
+
+                svg {
+                    width: 8px;
+                    color: $gray;
+                }
+
+                .langBox {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: white;
+                    border: solid 1px black;
+                    border-radius: 10px;
+
+                    .langList {
+                        >li {
+                            padding: 6px 20px;
+
+                            >span {
+                                font-size: 14px;
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.right {
+                .utillList {
+                    @include flex();
+
+                    >li {
+                        padding: 10px;
+                        position: relative;
+
+                        +li {
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 1px;
+                                height: 10px;
+                                background-color: $gray;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                            }
+                        }
+
+                        >a {
+                            display: inline-block;
+                            color: $gray;
+                            font-size: 14px;
+                        }
+                        .payco{
+                            background-image: url('../asset/imgs/wordImg/payco.svg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            width: 42px;
+                            height: 10px;
+                        }
+
+                        >button {
+                            color: $gray;
+                        }
+
+                    }
+
+                    .collaboDrop {
+                        position: relative;
+                        svg{
+                            color: $gray;
+                        }
+                        .collaboBox {
+                            position: absolute;
+                            background-color: white;
+                            top: 100%;
+                            left: 0;
+                            border: solid 1px black;
+                            border-radius: 10px;
+                            padding: 5px;
+
+                            .collaboList {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+
+                                li {
+                                    padding: 2px 5px;
+                                    >a {
+                                        display: flex;
+                                        justify-content: center;
+                                        width: 60px;
+                                        height: 20px;
+                                        @each $name, $url in $images {
+                                            .#{$name} {
+                                                &::after {
+                                                    content: '';
+                                                    display: block;
+                                                    background-image: url(#{$url});
+                                                    background-size: 100% 100%;
+                                                    background-repeat: no-repeat;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .bugs{
+                                            width: 32px;
+                                            height: 100%;
+                                        }
+                                        .comico{
+                                            width: 47px;
+                                            height: 100%;
+                                        }
+
+                                        .hangame{
+                                            width: 61px;
+                                            height: 100%;
+                                        }
+
+                                        .insidenhn{
+                                            width: 61px;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .headerMid{
+
+        .headerMidInner{
+            @include flex(space-between);
+            @include pcWidth();
+            padding: 30px 0;
+            >.left{
+                @include flex(space-between);
+                .logoBox{
+                    .logo{
+                        >img{
+
+                        }
+                    }
+                }
+                .headerNavList{
+                    @include flex(space-between){
+                        margin-left: 20px
+                    };
+                    >li{
+                        margin-left: 30px;
+                        >a{
+                            font-size: 26px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            >.right{
+                >a{
+                    display: inline-block;
+                    width: 204px;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .headerGnb{
+        border-top: 1px solid $gray-ec;
+        border-bottom: 1px solid black;
+        .headerGnbInner{
+            @include pcWidth();
+            @include flex(space-between);
+            >.left{
+                >.gnbListBox{
+                    @include flex();
+                    .gnbList{
+                        @include flex();
+                        +.gnbList{
+                            position: relative;
+                            margin-left: 20px;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                left: -10px;
+                                transform: translateY(-50%);
+                                display: block;
+                                width: 1px;
+                                height: 15px;
+                                background-color: $gray;
+                            }
+                        }
+                        >li{
+                            >a{
+                                display: block;
+                                padding: 20px 10px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.right{
+                .searchBox{
+                    position: relative;
+                    >input{
+                        width: 250px;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+                        border: 1px solid $gray;
+                        
+                    }
+                    >svg{
+                        font-size: 24px;
+                        color: black;
+                        position: absolute;
+                        top: 50%;
+                        right: 5%;
+                        transform: translate(-5%, -50%);
+
+                    }
+                }
+            }
+        }
+    }
+}
