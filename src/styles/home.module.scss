@@ -2,6 +2,7 @@
 @import '../styles//variables.scss';
 
 main{
+
     .mainSlideSec{
 
     }
@@ -53,7 +54,6 @@ main{
                         @include flex(space-between);
                         >li{
                             width: 200px;
-                            height: 247px;
                             >a{
 
                             }
@@ -61,5 +61,73 @@ main{
                 }
             }
         }
+    }
+
+    .midBannerSec{
+        @include pcWidth;
+        margin-top: 30px;
+    }
+
+    .rankSec{
+        @include pcWidth;
+        margin-top: 80px;
+        .rankBox{
+            .secTop{
+                @include flex(space-between,flex-end);
+                margin-bottom: 30px;
+                .rankTopList{
+                    @include flex();
+                    >li{
+                        >button{
+                            font-size: 32px;
+                        }
+                    }
+                }
+
+                >button{
+                    text-decoration: underline;
+                }
+            }
+            
+            .rankCategoryBox{
+                @include flex(space-between);
+                margin-bottom: 20px;
+                .rankCategoryList{
+                    @include flex(space-between);
+                    >li{
+                        margin-right: 10px;
+                        >button{
+                            background-color: white;
+                            color: black;
+                            border: 1px solid $gray;
+                            padding: 10px 20px;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+                .rankDateList{
+                    @include flex();
+                    >li{
+                        >button{
+                            
+                        }
+                    }
+                }
+            }
+
+            .posterBox{
+                .rankPosterList{
+                    @include flex(space-between);
+                    >li{
+                        width: 200px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .todayPickSec{
+        
     }
 }

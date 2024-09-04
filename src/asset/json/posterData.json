@@ -1,39 +1,154 @@
 {
-    "ticketOpne" : [
+    "ticketOpne": [
         {
-            "title" : "뮤지컬 <랭보> 2차​​ 티켓오픈 안내",
-            "date" : "09.03(화) 14:00",
+            "title": "뮤지컬 <랭보> 2차​​ 티켓오픈 안내",
+            "date": "09.03(화) 14:00",
             "mainSrc": "asset/imgs/poster/뮤지컬_랭보.jpg",
-            "alt" : "뮤지컬 랭보 이미지"
-        },        {
-            "title" : "이승환 35주년 콘서트 < HEAVEN > - 고양​ 티켓오픈 안내",
-            "date" : "09.03(화) 14:00",
-            "mainSrc": "asset/imgs/poster/24-이승환-고양_웹포스터.jpg",
-            "alt" : "이승환 35주년 콘서트 이미지"
-        },        {
-            "title" : "​코믹 마샬아츠 퍼포먼스 < 점프 JUMP > 공연의 새로운 시작!​ 티켓오픈 안내",
-            "date" : "09.04(수) 09:00"  ,
-            "mainSrc": "asset/imgs/poster/코빅_마샬아츠.jpg",
-            "alt" : "코빅 마샬아츠 이미지"
+            "alt": "뮤지컬 랭보 이미지"
         },
         {
-            "title" : "[단독판매] 정욱진 1st 팬미팅 < It’s NEW! >​ 티켓오픈 안내",
-            "date" : "09.06(금) 14:00"  ,
+            "title": "이승환 35주년 콘서트 < HEAVEN > - 고양​ 티켓오픈 안내",
+            "date": "09.03(화) 14:00",
+            "mainSrc": "asset/imgs/poster/24-이승환-고양_웹포스터.jpg",
+            "alt": "이승환 35주년 콘서트 이미지"
+        },
+        {
+            "title": "​코믹 마샬아츠 퍼포먼스 < 점프 JUMP > 공연의 새로운 시작!​ 티켓오픈 안내",
+            "date": "09.04(수) 09:00",
+            "mainSrc": "asset/imgs/poster/코빅_마샬아츠.jpg",
+            "alt": "코빅 마샬아츠 이미지"
+        },
+        {
+            "title": "[단독판매] 정욱진 1st 팬미팅 < It’s NEW! >​ 티켓오픈 안내",
+            "date": "09.06(금) 14:00",
             "mainSrc": "asset/imgs/poster/2024정욱진팬미팅_오픈공지이미지.jpg",
-            "alt" : "정욱진 팬미팅 이미지"
-        },{
-            "title" : "[단독판매] [피처링_트랙 4] 뮤지컬 <박열>​​ 티켓오픈 안내",
-            "date" : "09.09(월) 14:00"  ,
+            "alt": "정욱진 팬미팅 이미지"
+        },
+        {
+            "title": "[단독판매] [피처링_트랙 4] 뮤지컬 <박열>​​ 티켓오픈 안내",
+            "date": "09.09(월) 14:00",
             "mainSrc": "asset/imgs/poster/PC_피처링_상세포스터_박열.jpg",
-            "alt" : "박열 뮤지컬 이미지"
+            "alt": "박열 뮤지컬 이미지"
         }
     ],
-    "sim" : [
-        {
-            "aaa" : "zz"
+    "categoryRanking": {
+        "category" : [
+            {
+                "name" : "뮤지컬"
+            },
+            {
+                "name" : "콘서트"
+            },
+            {
+                "name" : "클래식/무용"
+            },
+            {
+                "name" : "아동/가족"
+            },
+            {
+                "name" : "연극"
+            },
+            {
+                "name" : "전시"
+            },
+            {
+                "name" : "축제/레저"
+            }
+        ],
+        "musical": {
+            "daily" :[
+                {
+                    "title": "뮤지컬 < 사의찬미 2024 2ND STAGE >",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/사의찬미_포스터.jpg",
+                    "alt": "사의찬미 뮤지컬 이미지",
+                    "schedule": "2024.09.24 - 2024.10.27",
+                    "rank" : 1
+                },
+                {
+                    "title": "뮤지컬 <사의찬미>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/사의찬미_포스터.jpg",
+                    "alt": "사의찬미 뮤지컬 이미지",
+                    "schedule": "2024.07.02 - 2024.09.22",
+                    "rank" : 2
+                },
+                {
+                    "title": "뮤지컬 <랭보>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/뮤지컬_랭보.jpg",
+                    "alt": "랭보 뮤지컬 이미지",
+                    "schedule": "2024.09.17 - 2024.12.08",
+                    "rank" : 3
+                },
+                {
+                    "title": "뮤지컬 <시카고>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/시카고.jpg",
+                    "alt": "시카고 뮤지컬 이미지",
+                    "schedule": "2024.06.07 - 2024.09.29",
+                    "rank" : 4
+                },
+                {
+                    "title": "뮤지컬 <시카고> - 울산",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/시카고_울산.jpg",
+                    "alt": "시카고 뮤지컬 이미지",
+                    "schedule": "2024.11.01 - 2024.11.03",
+                    "rank" : 5
+                }
+            ],
+            "weekly" :[
+                {
+                    "title": "뮤지컬 < 사의찬미 2024 2ND STAGE >",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/사의찬미_포스터.jpg",
+                    "alt": "사의찬미 뮤지컬 이미지",
+                    "schedule": "2024.09.24 - 2024.10.27",
+                    "rank" : 1
+                },
+                {
+                    "title": "뮤지컬 <사의찬미>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/사의찬미_포스터.jpg",
+                    "alt": "사의찬미 뮤지컬 이미지",
+                    "schedule": "2024.07.02 - 2024.09.22",
+                    "rank" : 2
+                },
+                {
+                    "title": "뮤지컬 <랭보>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/뮤지컬_랭보.jpg",
+                    "alt": "랭보 뮤지컬 이미지",
+                    "schedule": "2024.09.17 - 2024.12.08",
+                    "rank" : 3
+                },
+                {
+                    "title": "뮤지컬 <시카고>",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/시카고.jpg",
+                    "alt": "시카고 뮤지컬 이미지",
+                    "schedule": "2024.06.07 - 2024.09.29",
+                    "rank" : 4
+                },
+                {
+                    "title": "뮤지컬 <시카고> - 울산",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/시카고_울산.jpg",
+                    "alt": "시카고 뮤지컬 이미지",
+                    "schedule": "2024.11.01 - 2024.11.03",
+                    "rank" : 5
+                }
+            ]
         },
-        {
-            "asfa" : "afsa"
-        }
-    ]
+        "concert": [
+            {
+                "title": "[단독판매] [피처링_트랙 4] 뮤지컬 <박열>​​ 티켓오픈 안내",
+                "date": "09.09(월) 14:00",
+                "mainSrc": "asset/imgs/poster/PC_피처링_상세포스터_박열.jpg",
+                "alt": "박열 뮤지컬 이미지",
+                "schedule": ""
+            }
+        ]
+    }
 }

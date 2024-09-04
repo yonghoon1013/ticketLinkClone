@@ -3,13 +3,14 @@ import mainSliderStyle from '../styles/mainSlider.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
 
-import mainSlideData from '../asset/json/mainSlideData.json'
+import slideData from '../asset/json/slideData.json'
 
 function MainSlider() {
-    console.log(mainSlideData[0].mainImg);
+
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
     const onAutoplayTimeLeft = (s, time, progress) => {
@@ -23,6 +24,7 @@ function MainSlider() {
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
+                    effect={'fade'}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -30,12 +32,12 @@ function MainSlider() {
                     pagination={{
                         clickable: true,
                     }}
-                    modules={[Autoplay]}
+                    modules={[Autoplay, EffectFade]}
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
                     className={mainSliderStyle.mainSwiper}
                 >
                     {
-                        mainSlideData.map((item, index) => (
+                        slideData.mainSlide.map((item, index) => (
                             <SwiperSlide key={index} className={mainSliderStyle.swiperSlide}>
                                 <img src={require(`../${item.mainSrc}`)} alt={item.alt} />
                             </SwiperSlide>
@@ -53,7 +55,7 @@ function MainSlider() {
             <div className={mainSliderStyle.thumbnailBox}>
                 <ul className={mainSliderStyle.thumbnailList}>
                     {
-                        mainSlideData.map((item, index) => (
+                        slideData.mainSlide.map((item, index) => (
                             <li key={index}>
                                 <img src={require(`../${item.thumbSrc}`)} alt="d" />
                             </li>

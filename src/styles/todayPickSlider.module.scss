@@ -1,0 +1,15 @@
+@use '../styles/mixin' as *;
+@import '../styles//variables.scss';
+
+.todayPickBox{
+    background-color: aqua;
+    height: 470px;  
+    .slideWrap{
+        @include pcWidth;
+        .slideBox{
+            .todayPickSwiper{
+    
+            }
+        }
+    }
+}

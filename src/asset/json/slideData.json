@@ -1,0 +1,87 @@
+{
+    "mainSlide" :[
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_유진과유진.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_유진과유진.jpg",
+            "alt" : "유진과유진"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_그놀때콘서트.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_그놀때콘서트.jpg",
+            "alt" : "그놀때콘서트"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_달빛기행.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_달빛기행.jpg",
+            "alt" : "달빛기행 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_모나리자이머시브.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_모나리자이머시브.jpg",
+            "alt" : "모나리자이머시브 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_방구석뮤지컬.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_방구석뮤지컬.jpg",
+            "alt" : "방구석뮤지컬 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_여행박사1.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_여행박사1.jpg",
+            "alt" : "여행박사 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_원더리벳.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_원더리벳.jpg",
+            "alt" : "원더리벳 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_조권.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_조권.jpg",
+            "alt" : "조권 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_청춘폴나잇2024.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_청춘폴나잇2024.jpg",
+            "alt" : "청춘폴나잇2024 이미지"
+        },
+        {
+            "mainSrc": "asset/imgs/mainSlider/PC_BigBanner_vos.jpg",
+            "thumbSrc": "asset/imgs/mainSlider/thumbnail_pc_vos.jpg",
+            "alt" : "vos 이미지"
+        }
+    ],
+    "todayPickSlide" : [
+        {
+            "title" : "뮤지컬<시카고>",
+            "mainSrc": "asset/imgs/poster/today_시카고.jpg",
+            "alt" : "뮤지컬 시카고 이미지",
+            "schedule" : "2024.06.07 - 2024.11.03",
+            "bgColor" : "rgb(183, 5, 18)"
+        },        {
+            "title" : "2024 경기인디뮤직페스티벌",
+            "mainSrc": "asset/imgs/poster/PC_Today_경기인디뮤직페스티벌.jpg",
+            "alt" : "2024 경기인디뮤직페스티벌 이미지",
+            "schedule" : "2024.10.12 - 2024.10.13",
+            "bgColor" : "rgb(0, 159, 255)"
+        },        {
+            "title" : "뮤지컬 광화문연가",
+            "mainSrc": "asset/imgs/poster/PC_Today_광화문연가.jpg",
+            "alt" : "뮤지컬 광화문연가 이미지",
+            "schedule" : "2024.10.23 - 2025.01.05",
+            "bgColor" : "rgb(118, 57, 113)"
+        },        {
+            "title" : "청춘폴나잇 2024",
+            "mainSrc": "asset/imgs/poster/today_PC_쳇베이커.jpg",
+            "alt" : "청춘폴나잇 2024 이미지",
+            "schedule" : "2024.08.12 - 2024.11.12",
+            "bgColor" : "rgb(152, 79, 28)"
+        },        {
+            "title" : "K-드라마 스포트라이트",
+            "mainSrc": "asset/imgs/poster/PC_Today_k드라마.jpg",
+            "alt" : "K-드라마 스포트라이트 이미지",
+            "schedule" : "2024.08.12 - 2024.11.12",
+            "bgColor" : "rgb(109, 196, 197)"
+        }
+    ]
+}
