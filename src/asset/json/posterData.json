@@ -150,5 +150,180 @@
                 "schedule": ""
             }
         ]
-    }
+    },
+    "payco" : [
+        {
+            "title": "코믹 마샬아츠 퍼포먼스 <점프>",
+            "date": null,
+            "mainSrc": "asset/imgs/poster/코빅_마샬아츠.jpg",
+            "alt": "코믹 마샬아츠 이미지",
+            "discount" : 10,
+            "price" : 50000
+        },        {
+            "title": "뮤지컬 <랭보>",
+            "date": null,
+            "mainSrc": "asset/imgs/poster/뮤지컬_랭보.jpg",
+            "alt": "뮤지컬 랭보 이미지",
+            "discount" : 10,
+            "price" : 55000
+        },{
+            "title": "2024 라움 마티네 콘서트",
+            "date": null,
+            "mainSrc": "asset/imgs/poster/라움_마니테_콘서트.jpg",
+            "alt": "라움 마니테 콘서트 이미지",
+            "discount" : 20,
+            "price" : 94000
+        },{
+            "title": "뮤지컬 <미오 프라텔로>",
+            "date": null,
+            "mainSrc": "asset/imgs/poster/미오_프라텔로.jpg",
+            "alt": "미오 프라텔로 이미지",
+            "discount" : 35,
+            "price" : 55000
+        },{
+            "title": "아람 로열 클래식 4 - 사라 장 바이올린 리사이틀",
+            "date": null,
+            "mainSrc": "asset/imgs/poster/사라장_바이올린.jpg",
+            "alt": "사라장 바이올린 이미지",
+            "discount" : 10,
+            "price" : 70000
+        }
+    ],
+    "weeklyPerformance" :{
+        "mainPoster" : [
+            {
+                    "title": "케이윌 소극장 콘서트 < All The Way >",
+                    "date": null,
+                    "mainSrc": "asset/imgs/poster/PC_Week_케이윌.jpg",
+                    "alt": "케이윌 콘서트 이미지",
+                    "schedule": "2024.10.11 - 2024.10.13"
+            }
+        ],
+        "subPoster" : [
+            {
+                "title": "한화와 함께하는 서울세계불꽃축제 2024",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/week_한화서울불꽃축제.jpg",
+                "alt": "한화서울불꽃축제 이미지",
+                "schedule": "2024.10.05"
+            },{
+                "title": "스탠드 업 코미디 뮤지컬 <방구석 뮤지컬>",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/PC_Week_방구석뮤지컬.jpg",
+                "alt": "방구석 뮤지컬 이미지",
+                "schedule": "2024.09.29 - 2024.12.08"
+            },{
+                "title": "JORJA SMITH LIVE IN SEOUL - FALLING OR FLYING TOUR",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/PC_Week_조자스미스.jpg",
+                "alt": "방구석 뮤지컬 이미지",
+                "schedule": "2024.10.25"
+            },{
+                "title": " 2024 THE CRY ground",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/PC_Week_더크라이.jpg",
+                "alt": "더크라이 이미지",
+                "schedule": "2024.10.12 - 2024.10.13"
+            },{
+                "title": "YOASOBI ASIA TOUR 2024-2025 LIVE IN KOREA",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/PC_Week_요아소비.jpg",
+                "alt": "요아소비 콘서트 이미지",
+                "schedule": "2024.12.07 - 2024.12.08"
+            },{
+                "title": "제 1회 대한민국 파충류 페스티벌",
+                "date": null,
+                "mainSrc": "asset/imgs/poster/PC_Week_파충류페스티벌.jpg",
+                "alt": "대한민국 파충류 페스티벌 이미지",
+                "schedule": "2024.10.12 - 2024.10.13"
+            }
+        ]
+    },
+    "bestPerformance" : [
+        {
+            "title": "뮤지컬 <광화문연가>",
+            "date": null,
+            "place" : "디큐브 링크아트센터",
+            "mainSrc": "asset/imgs/poster/g_0816.jpg",
+            "alt": "뮤지컬 광화문연가 이미지",
+            "schedule": "2024.10.23 ~ 2025.01.05"
+        },        {
+            "title": "어게인2024투란도트",
+            "date": null,
+            "place" : "코엑스 컨벤션센터 D홀",
+            "mainSrc": "asset/imgs/poster/td_pst_0829.jpg",
+            "alt": "어게인 2024 투란도트 이미지",
+            "schedule": "2024.12.22 ~ 2024.12.31"
+        },        {
+            "title": "GENSHIN CONCERT TOUR",
+            "date": null,
+            "place" : "경희대학교 평화의전당",
+            "mainSrc": "asset/imgs/poster/main0724.jpg",
+            "alt": "GENSHIN CONCERT TOUR 이미지",
+            "schedule": "2024.11.23 ~ 2024.11.23"
+        },        {
+            "title": "뮤지컬 <랭보>",
+            "date": null,
+            "place" : "예스24스테이지 1관",
+            "mainSrc": "asset/imgs/poster/뮤지컬_랭보.jpg",
+            "alt": "뮤지컬 랭보 이미지",
+            "schedule": "2024.09.17 ~ 2024.12.08"
+        },        {
+            "title": "그 놀 때 콘서트",
+            "date": null,
+            "place" : "연세대학교 대강당",
+            "mainSrc": "asset/imgs/poster/then_0827.jpg",
+            "alt": "그놀때 콘서트 이미지",
+            "schedule": "2024.10.05 ~ 2024.10.05"
+        },        {
+            "title": "청춘폴나잇 2024",
+            "date": null,
+            "place" : "킨텍스 제1전시장 1홀",
+            "mainSrc": "asset/imgs/poster/today_PC_쳇베이커.jpg",
+            "alt": "청춘폴나잇 2024 이미지",
+            "schedule": "2024.10.12 ~ 2024.10.13"
+        },        {
+            "title": "한화와 함께하는 서울세계불꽃축제 2024",
+            "date": null,
+            "place" : "여의도한강공원 일대",
+            "mainSrc": "asset/imgs/poster/week_한화서울불꽃축제.jpg",
+            "alt": "서울세계불꽃축제 이미지",
+            "schedule": "2024.10.05 ~ 2024.10.05"
+        },        {
+            "title": "V.O.S 콘서트- 서울",
+            "date": null,
+            "place" : "이화여자대학교 삼성홀",
+            "mainSrc": "asset/imgs/poster/main0828.jpg",
+            "alt": "V.O.S 콘서트 이미지",
+            "schedule": "2024.11.29 ~ 2024.11.30"
+        },        {
+            "title": "변진섭 전국투어 콘서트 : 변천사 ",
+            "date": null,
+            "place" : "전국",
+            "mainSrc": "asset/imgs/poster/b_cw_pst_0712.jpg",
+            "alt": "뮤지컬 광화문연가 이미지",
+            "schedule": "2024.07.20 ~ 2024.10.12"
+        },        {
+            "title": "이은미 라이브 투어 [MOVE ON]",
+            "date": null,
+            "place" : "전국",
+            "mainSrc": "asset/imgs/poster/lem_bs_pst_0904.jpg",
+            "alt": "이은미 라이브 투어 이미지",
+            "schedule": "2024.11.30 ~ 2024.12.15"
+        },        {
+            "title": "[슈퍼 얼리버드] 미피와 마법 우체통",
+            "date": null,
+            "place" : "안녕인사동 B1인사센트럴 뮤지엄",
+            "mainSrc": "asset/imgs/poster/main0906.png",
+            "alt": "미피와 마법 우체통 이미지",
+            "schedule": "2024.11.21 ~ 2025.01.24"
+        },        {
+            "title": "박창근 장르 with 오케스트라 전국투어 콘서트 - 서울",
+            "date": null,
+            "place" : "경희대학교 평화의전당",
+            "mainSrc": "asset/imgs/poster/main0731.jpg",
+            "alt": "박창근 장르 with 오케스트라 전국투어 콘서트 이미지",
+            "schedule": "2024.10.19 ~ 2024.10.20"
+        }
+    ]
 }

@@ -1,14 +1,98 @@
 @use '../styles/mixin' as *;
 @import '../styles//variables.scss';
 
-.todayPickBox{
-    background-color: aqua;
-    height: 470px;  
-    .slideWrap{
+.slideWrap {
+    margin-bottom: 300px;
+    height: 470px;
+    .secHeader {
         @include pcWidth;
-        .slideBox{
-            .todayPickSwiper{
-    
+        margin-bottom: 30px;
+        >h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    .slideBox {
+            height: 100%;
+        .todayPickSwiper{
+            height: 100%;
+            overflow: inherit;
+            .swiperSlide {
+                background-color: aqua;
+                height: 100%;
+                .swiperSlideCon {
+                    @include pcWidth;
+                    height: 100%;
+                    >a{
+                        height: 100%;
+                        @include flex();
+                        position: relative;
+                        >.left{
+                            @include flex(flex-start, flex-start){
+                                flex-direction: column;
+                            };
+                            >span{
+                                color: white;
+                            }
+                            .title{
+                                display: inline-block;
+                                width: 300px;
+                                font-size: 36px;
+                                font-weight: bold;
+                                line-height: 1.2;
+                                margin-bottom: 30px;
+                            }
+                            .schedule{
+                                font-size: 18px;
+                            }
+                        }
+                        >.right{
+                            position: absolute;
+                            left: 50%;
+                            top: 70px;
+                            transform: translateX(-50%);
+                            >img{
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .todayPickSlideList{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-left: 450px;
+                z-index: 5;
+                width: 340px;
+                >li{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background-color: white;
+                        opacity: 0.5;
+
+                    }
+                    >a{
+                        width: 100%;
+                        display: inline-block;
+                        padding: 20px 0;
+                        color: white;
+                    }
+                }
+
+                >.active{
+                    &::before{
+                        height: 3px;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }

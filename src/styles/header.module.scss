@@ -199,6 +199,7 @@ $images: (
     .headerGnb{
         border-top: 1px solid $gray-ec;
         border-bottom: 1px solid black;
+        position: relative;
         .headerGnbInner{
             @include pcWidth();
             @include flex(space-between);
@@ -207,26 +208,59 @@ $images: (
                     @include flex();
                     .gnbList{
                         @include flex();
-                        +.gnbList{
-                            position: relative;
-                            margin-left: 20px;
-                            &::after{
-                                content: '';
-                                position: absolute;
-                                top: 50%;
-                                left: -10px;
-                                transform: translateY(-50%);
-                                display: block;
-                                width: 1px;
-                                height: 15px;
-                                background-color: $gray;
-                            }
-                        }
                         >li{
                             >a{
                                 display: block;
                                 padding: 20px 10px;
                                 font-weight: bold;
+                            }
+                            .subBox{
+                                display: none;
+                                width: 100%;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                z-index: 9;
+                                background-color: rgb(255, 255, 255);
+                                border-top: 1px solid black;
+                                .subList{
+                                    @include flex();
+                                    @include pcWidth();
+                                    height: 47px;
+                                    >li{
+                                        >a{
+                                            padding: 10px;
+                                            color: #62676c;
+                                            font-size: 14px;
+                                            &:hover{
+                                                color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover{
+                                .subBox{
+                                    display: block;
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            >li{
+                                &:nth-of-type(1){
+                                    position: relative;
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        transform: translateY(-50%);
+                                        width: 1px;
+                                        height: 20%;
+                                        background-color: #cfd0d7;
+                                    }
+                                }
                             }
                         }
                     }
@@ -251,6 +285,127 @@ $images: (
                         right: 5%;
                         transform: translate(-5%, -50%);
 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:481px) and (max-width:1023px){
+    .header{
+        padding: 0 50px;
+        .utillHeader {
+            display: none;
+        }
+    
+        .headerMid{
+            .headerMidInner{
+                padding: 30px 0;
+                >.left{
+
+                    .logoBox{
+                        display: none;
+                        .logo{
+                            >img{
+    
+                            }
+                        }
+                    }
+                    .headerNavList{
+                        margin-left: 0;
+                        >li{
+                            margin-left: 10px;
+                            >a{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+    
+                >.right{
+
+                    .mobile{
+                        border: 1px solid $gray;
+                        padding: 8px 10px;
+                        border-radius: 100px;
+                        >span{
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        >.point{
+                            color: red;
+                        }
+                    }
+                    .headerImg{
+                        display: none;
+                    }
+                    >a{
+                        width: auto;
+                        >img{
+
+                        }
+                    }
+                }
+            }
+        }
+    
+        .headerGnb{
+            display: none;
+            .headerGnbInner{
+
+                >.left{
+                    >.gnbListBox{
+
+                        .gnbList{
+
+                            >li{
+                                >a{
+
+                                }
+                                .subBox{
+
+                                    .subList{
+
+                                        >li{
+                                            >a{
+
+                                                &:hover{
+ 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .subBox{
+
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                >li{
+                                    &:nth-of-type(1){
+
+                                        &::before{
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                >.right{
+                    .searchBox{
+
+                        >input{
+
+                        }
+                        >svg{
+
+                        }
                     }
                 }
             }

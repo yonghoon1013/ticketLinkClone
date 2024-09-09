@@ -23,41 +23,93 @@
 
     .thumbnailBox{
         position: absolute;
-        bottom: 10%;
-        left: 10%;
+        bottom: 57px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -230px;
         z-index: 10;
         .thumbnailList{
             @include flex();
             >li{
                 margin-right: 10px;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0.5;
+                }
                 >img{
-
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .active{
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid white;
+                    box-sizing: border-box;
+                    border-radius: 10px;
                 }
             }
         }
     }
 }
 
-
-
-
-
-
-
-
-
 .autoplayProgress {
     position: absolute;
-    right: 16px;
-    bottom: 16px;
+    left: 50%;
+    bottom: 60px;
+    margin-left: 517px;
     z-index: 10;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: var(--swiper-theme-color);
+    color: red;
+    cursor: pointer;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        background-image: url('../asset/imgs//icon/stop.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;   
+        width: 100%;
+        height: 100%;
+        border: 2px solid #dfe0e5;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
 
     svg {
         --progress: 0;
@@ -67,11 +119,72 @@
         z-index: 10;
         width: 100%;
         height: 100%;
-        stroke-width: 4px;
-        stroke: var(--swiper-theme-color);
+        stroke-width: 2px;
+        stroke: red;
         fill: none;
         stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
         stroke-dasharray: 125.6;
         transform: rotate(-90deg);
     }
+
+}
+
+.autoplayProgress.stop{
+    &::before{
+        background-image: url('../asset/imgs//icon/play.svg');
+    }
+}
+
+.autoplayProgress.play{
+    &::before{
+        background-image: url('../asset/imgs//icon/stop.svg');
+    }
+}
+
+
+@media (min-width:481px) and (max-width:1023px){
+    .slideWrap{
+        padding: 0 50px;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1;
+        .slideBox{
+            border-radius: 20px;
+            overflow: hidden;
+            .mainSwiper{
+                .swiperSlide{
+                    width: 70%;
+                    // margin-right: 100px;
+                    >img{
+                        object-fit: fill;
+                    }
+                }
+            }
+        }
+    
+        .thumbnailBox{
+            display: none;
+            .thumbnailList{
+
+                >li{
+
+                    &::before{
+
+                    }
+                    >img{
+
+                    }
+                }
+                .active{
+                    &::before{
+
+                    }
+                    &::after{
+
+                    }
+                }
+            }
+        }
+    }
+
 }

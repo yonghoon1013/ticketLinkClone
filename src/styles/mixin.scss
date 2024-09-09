@@ -10,6 +10,7 @@
     @content;
 }
 
+
 @mixin textEllipsis($num){
     display: -webkit-box;
     overflow: hidden;

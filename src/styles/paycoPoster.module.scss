@@ -1,0 +1,114 @@
+@use '../styles/mixin' as *;
+@import '../styles//variables.scss';
+
+a{
+    &:hover{
+        .imgBox{
+            >img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .imgBox{
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        height: 247px;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s;
+        }
+    }
+    .imgInfoBox{
+        .title{
+            @include textEllipsis(1);
+            font-size: 18px;
+            line-height: 2;
+        }
+        .priceBox{
+            @include flex(space-between);
+            >.left{
+                color: red;
+                .discount{
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+                .discountTxt{
+
+                }
+            }
+            >.right{
+                @include flex(center,flex-end){
+                    flex-direction: column;
+                }
+                .originalPriceBox{
+                    font-size: 14px;
+                    .price{
+
+                    }
+                }
+                .discountPriceBox{
+                    font-weight: bold;
+                    .discountPrice{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:481px) and (max-width:1023px){
+    a{
+        &:hover{
+            .imgBox{
+                >img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .imgBox{
+
+            height: 180px;
+            >img{
+
+            }
+        }
+        .imgInfoBox{
+            .title{
+                font-size: 14px;
+            }
+            .priceBox{
+
+
+                >.left{
+                    order: 2;
+                    .discount{
+                        font-size: 14px;
+                    }
+                    .discountTxt{
+    
+                    }
+                }
+                >.right{
+
+                    .originalPriceBox{
+
+                        .price{
+                            
+                        }
+                    }
+                    .discountPriceBox{
+
+                        .discountPrice{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

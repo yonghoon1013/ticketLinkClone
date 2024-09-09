@@ -79,7 +79,11 @@ function Header() {
                     </div>
 
                     <div className={headerStyle.right}>
-                        <a href='/'>
+                        <Link to={'/'} className={headerStyle.mobile}>
+                                <span>링크</span>
+                                <span className={headerStyle.point}>ON</span>
+                        </Link>
+                        <a href='/' className={headerStyle.headerImg}>
                             <img src={headerBanner} alt='헤더배너'></img>
                         </a>
                     </div>
@@ -92,14 +96,58 @@ function Header() {
                         <nav className={headerStyle.gnbListBox}>
                             <ul className={headerStyle.gnbList}>
                                 <li><Link to={'/'}>홈</Link></li>
-                                <li><Link to={'/'}>공연</Link></li>
-                                <li><Link to={'/'}>전시</Link></li>
+                                <li>
+                                    <Link to={'/'}>공연</Link>
+                                    <div className={headerStyle.subBox}>
+                                        <ul className={headerStyle.subList}>
+                                            <li><Link to={'/'}>뮤지컬</Link></li>
+                                            <li><Link to={'/'}>콘서트</Link></li>
+                                            <li><Link to={'/'}>클래식/무용</Link></li>
+                                            <li><Link to={'/'}>대학로</Link></li>
+                                            <li><Link to={'/'}>아동/가족</Link></li>
+                                            <li><Link to={'/'}>연극</Link></li>
+                                            <li><Link to={'/'}>공연장</Link></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    </li>
+                                <li>
+                                    <Link to={'/'}>전시</Link>
+                                    <div className={headerStyle.subBox}>
+                                        <ul className={headerStyle.subList}>
+                                            <li><Link to={'/'}>전시</Link></li>
+                                            <li><Link to={'/'}>축제/레저</Link></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><Link to={'/'}>링크ON</Link></li>
                             </ul>
                             <ul className={headerStyle.gnbList}>
                                 <li><Link to={'/'}>랭킹</Link></li>
-                                <li><Link to={'/'}>지역</Link></li>
-                                <li><Link to={'/'}>이벤트</Link></li>
+                                <li>
+                                    <Link to={'/'}>지역</Link>
+                                    <div className={headerStyle.subBox}>
+                                        <ul className={headerStyle.subList}>
+                                            <li><Link to={'/'}>서울</Link></li>
+                                            <li><Link to={'/'}>경기/인천</Link></li>
+                                            <li><Link to={'/'}>충정/강원</Link></li>
+                                            <li><Link to={'/'}>대구/경북</Link></li>
+                                            <li><Link to={'/'}>부산/경남</Link></li>
+                                            <li><Link to={'/'}>광주/전라</Link></li>
+                                            <li><Link to={'/'}>제주</Link></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <Link to={'/'}>이벤트</Link>
+                                    <div className={headerStyle.subBox}>
+                                        <ul className={headerStyle.subList}>
+                                            <li><Link to={'/'}>진행중인 이벤트</Link></li>
+                                            <li><Link to={'/'}>당첨자 발표</Link></li>
+                                            <li><Link to={'/'}>참여이벤트</Link></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><Link to={'/'}>기획전</Link></li>
                                 <li><Link to={'/'}>PAYCO VIP ZONE</Link></li>
                             </ul>

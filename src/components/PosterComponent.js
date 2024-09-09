@@ -4,11 +4,16 @@ import { Link } from 'react-router-dom'
 import posterComponentStyle from '../styles/posterComponent.module.scss'
 
 
-function PosterComponent( {props} ) {
+function PosterComponent( {props, size} ) {
+
+    const sizeClass = size === 'mini' ? posterComponentStyle.mini :
+    size === 'medium' ? posterComponentStyle.medium :
+    size === 'large' ? posterComponentStyle.large :
+    '';
     
     return (
             <Link to={'/'}>
-                <div className={posterComponentStyle.imgBox}>
+                <div className={`${posterComponentStyle.imgBox} ${sizeClass}`}>
                     <img src={require(`../${props.mainSrc}`)} alt={props.alt}></img>
                 </div>
                 <div className={posterComponentStyle.imgInfoBox}>
