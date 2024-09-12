@@ -184,6 +184,9 @@ $images: (
             }
 
             >.right{
+                .mobile{
+                    display: none;
+                }
                 >a{
                     display: inline-block;
                     width: 204px;
@@ -326,6 +329,7 @@ $images: (
                 >.right{
 
                     .mobile{
+                        display: block;
                         border: 1px solid $gray;
                         padding: 8px 10px;
                         border-radius: 100px;
