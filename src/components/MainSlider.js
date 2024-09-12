@@ -83,7 +83,7 @@ function MainSlider() {
         freeMode={true}  
                     effect={effect}
                     autoplay={{
-                        delay: 20000500,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
